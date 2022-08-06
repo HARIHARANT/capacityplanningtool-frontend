@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import axios from "axios";
 
 const HttpService =async (url, method, request) =>{
-    const BASEURL= `http://localhost:3001`;
+    const BASEURL= `https://capacityplanningtool.herokuapp.com`;
     console.log(url + " " + method + " " +JSON.stringify(request));
     let response;
     const reqUrl = `${BASEURL}${url}`;    
