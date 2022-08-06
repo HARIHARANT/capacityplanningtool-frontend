@@ -112,6 +112,10 @@ function AddUser(){
           setEmail('');
           setPassword('');
         }
+      }else if(usersCreate.data.errorCode == "USER_EXISTS"){
+        confirm(usersCreate.data.message);
+      }else{
+        confirm("Technical error occurred");
       }
       console.log(usersCreate)
     }
